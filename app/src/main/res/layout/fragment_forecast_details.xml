@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2962FF">
+
+    <TextView
+        android:id="@+id/tv_details_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Temp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/tv_temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Temperature is: "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_details_temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_details_feel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Real Feel"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_details_temp"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/tv_feel_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Real feel is: "
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_details_feel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_details_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Weather"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_details_feel"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <TextView
+        android:id="@+id/tv_high_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The High is"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_high_tem"
+        app:layout_constraintEnd_toEndOf="@id/tv_high_tem"
+        app:layout_constraintStart_toStartOf="@id/tv_high_tem" />
+
+    <TextView
+        android:id="@+id/tv_high_tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:hint="High Temp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_low_tem"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_low_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Low is"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_low_tem"
+        app:layout_constraintEnd_toEndOf="@id/tv_low_tem"
+        app:layout_constraintStart_toStartOf="@id/tv_low_tem" />
+
+    <TextView
+        android:id="@+id/tv_low_tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:hint="Low Temp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_humidity"
+        app:layout_constraintStart_toEndOf="@id/tv_high_tem" />
+
+    <TextView
+        android:id="@+id/tv_humidity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_humidity"
+        app:layout_constraintEnd_toEndOf="@id/tv_humidity"
+        app:layout_constraintStart_toStartOf="@id/tv_humidity" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:hint="Humidity"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_low_tem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

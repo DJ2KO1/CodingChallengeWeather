@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DJMayfieldWeatherApp</string>
+    <string name="loading">Loading</string>
+    <string-array name="temperature_scale">
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+    </string-array>
+</resources>

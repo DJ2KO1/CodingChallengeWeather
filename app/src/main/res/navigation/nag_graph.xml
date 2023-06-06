@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nag_graph"
+    app:startDestination="@id/nav_starting_page">
+
+    <fragment
+        android:id="@+id/nav_starting_page"
+        android:name="com.example.djmayfieldweatherapp.view.StartingPageFragment">
+        <action
+            android:id="@+id/action_starting_to_forecast"
+            app:destination="@id/nav_forecast_list"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_forecast_list"
+        android:name="com.example.djmayfieldweatherapp.view.ForecastListFragment">
+        <action
+            android:id="@+id/action_forecast_to_details"
+            app:destination="@+id/nav_details"/>
+        <argument
+            android:name="city_name"
+            app:argType="string"/>
+        <argument
+            android:name="temp_scale"
+            app:argType="string"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_details"
+        android:name="com.example.djmayfieldweatherapp.view.ForecastDetailsFragment">
+        <argument
+            android:name="item"
+            app:argType="com.example.djmayfieldweatherapp.model.Forecast"
+            app:nullable="true"/>
+
+
+
+    </fragment>
+
+</navigation>
